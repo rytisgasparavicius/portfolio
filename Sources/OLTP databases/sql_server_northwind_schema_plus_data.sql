@@ -2,7 +2,7 @@
 ** Copyright Microsoft, Inc. 1994 - 2000
 ** All Rights Reserved.
 */
-
+--https://github.com/microsoft/sql-server-samples/blob/master/samples/databases/northwind-pubs/instnwnd%20(Azure%20SQL%20Database).sql
 -- This script does not create a database.
 -- Run this script in the database you want the objects to be created.
 -- Default schema is dbo.
