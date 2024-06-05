@@ -3,8 +3,8 @@ begin;
    -- create variables for user / password / role / warehouse / database (needs to be uppercase for objects)
    set role_name = 'FIVETRAN_ROLE';
    set user_name = 'FIVETRAN_USER';
-   set user_password = '************';
-   set warehouse_name = 'NORTHWIND';
+   --set user_password = '**********';
+   set warehouse_name = 'FIVETRAN_WAREHOUSE';
    set database_name = 'FIVETRAN_DATABASE';
 
    -- change role to securityadmin for user / role steps
