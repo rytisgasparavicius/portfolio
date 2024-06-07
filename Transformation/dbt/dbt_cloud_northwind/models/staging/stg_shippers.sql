@@ -1,4 +1,3 @@
-{{ config(materialized='table') }}
 select
    SHIPPERID,COMPANYNAME,PHONE
 from NORTHWIND_RAW.STAGING_FIVETRAN_DBO.SHIPPERS

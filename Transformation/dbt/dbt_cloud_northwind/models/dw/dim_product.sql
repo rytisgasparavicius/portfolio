@@ -1,4 +1,0 @@
-{{ config(materialized='table') }}
-select
-   PRODUCTID,PRODUCTNAME,CATEGORYID
-from NORTHWIND_RAW.STAGING_FIVETRAN_DBO.PRODUCTS
