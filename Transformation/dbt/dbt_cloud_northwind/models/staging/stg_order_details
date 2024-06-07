@@ -1,0 +1,8 @@
+{{ config(materialized='table') }}
+select
+  ORDERID,
+	PRODUCTID,
+	DISCOUNT,
+	QUANTITY,
+	UNITPRICE
+from NORTHWIND_RAW.STAGING_FIVETRAN_DBO.ORDER_DETAILS
