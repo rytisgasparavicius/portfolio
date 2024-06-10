@@ -29,7 +29,7 @@ sh.COMPANYNAME as shipper_COMPANYNAME
 from {{ ref('stg_order_details') }} od 
 join  {{ ref('stg_orders') }} o on od.ORDERID = o.ORDERID
 left join {{ ref ('dim_products') }} p on od.PRODUCTID = p.PRODUCTID
-left join {{ ref ('stg_customers') }} c on od.CUSTOMERID = c.CUSTOMERID
-left join {{ ref ('stg_employees') }} e on od.EMPLOYEEID = e.EMPLOYEEID
-left join {{ ref ('stg_suppliers') }} s on od.SUPPLIERID = s.SUPPLIERID
+left join {{ ref ('stg_customers') }} c on o.CUSTOMERID = c.CUSTOMERID
+left join {{ ref ('stg_employees') }} e on o.EMPLOYEEID = e.EMPLOYEEID
+left join {{ ref ('stg_suppliers') }} s on p.SUPPLIERID = s.SUPPLIERID
 left join {{ ref ('stg_shippers') }} sh on od.SHIPVIA = sh.SHIPVIA
