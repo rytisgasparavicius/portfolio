@@ -23,7 +23,7 @@ c.CONTACTTITLE,
 e.ADDRESS,
 e.FIRSTNAME,
 e.LASTNAME,
-e.COUNTRY,
+e.COUNTRY as employee_country,
 sh.COMPANYNAME as shipper_COMPANYNAME
 
 from {{ ref('stg_order_details') }} od 
