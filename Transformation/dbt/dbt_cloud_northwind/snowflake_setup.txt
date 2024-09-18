@@ -17,6 +17,7 @@ grant role dbt_transformer to user dbt_cloud_user;
 
 
 grant usage on database NORTHWIND_RAW to role dbt_transformer;
+grant usage on schema dbt in database NORTHWIND_RAW to role dbt_transformer;
 grant usage on future schemas in database NORTHWIND_RAW to role dbt_transformer;
 grant select on future tables in database NORTHWIND_RAW to role dbt_transformer;
 grant select on future views in database NORTHWIND_RAW to role dbt_transformer;
@@ -27,10 +28,12 @@ grant select on all views in database NORTHWIND_RAW to role dbt_transformer;
 create database NORTHWIND_ANALYTICS;
 
 grant all on database NORTHWIND_ANALYTICS to role dbt_transformer;
-
+grant usage on all schemas in database NORTHWIND_ANALYTICS to role dbt_transformer;
+grant all on database NORTHWIND_ANALYTICS to role dbt_transformer;
 
 //********** Reporter
 grant usage on database NORTHWIND_ANALYTICS to role dbt_reporter;
+
 grant usage on future schemas in database NORTHWIND_ANALYTICS to role dbt_reporter;
 grant select on future tables in database NORTHWIND_ANALYTICS to role dbt_reporter;
 grant select on future views in database NORTHWIND_ANALYTICS to role dbt_reporter;
@@ -39,3 +42,33 @@ grant usage on all schemas in database NORTHWIND_ANALYTICS to role dbt_reporter;
 grant select on all tables in database NORTHWIND_ANALYTICS to role dbt_transformer;
 grant select on all views in database NORTHWIND_ANALYTICS to role dbt_transformer;
 
+//**** GOOOOD
+grant all on warehouse FIVETRAN_WAREHOUSE to role dbt_transformer;
+grant usage on database NORTHWIND_ANALYTICS to role dbt_transformer;
+grant create schema on database NORTHWIND_ANALYTICS to role dbt_transformer; 
+grant usage on schema NORTHWIND_ANALYTICS.dbt to role dbt_transformer;
+grant create table on schema NORTHWIND_ANALYTICS.dbt to role dbt_transformer;
+grant create view on schema NORTHWIND_ANALYTICS.dbt to role dbt_transformer;
+grant usage on future schemas in database NORTHWIND_ANALYTICS to role dbt_transformer;
+grant monitor on future schemas in database NORTHWIND_ANALYTICS to role dbt_transformer;
+grant select on future tables in database NORTHWIND_ANALYTICS to role dbt_transformer;
+grant select on future views in database NORTHWIND_ANALYTICS to role dbt_transformer;
+grant usage on all schemas in database NORTHWIND_ANALYTICS to role dbt_transformer;
+grant monitor on all schemas in database NORTHWIND_ANALYTICS to role dbt_transformer;
+grant select on all tables in database NORTHWIND_ANALYTICS to role dbt_transformer;
+grant select on all views in database NORTHWIND_ANALYTICS to role dbt_transformer;
+
+//accountadmin
+grant usage on database NORTHWIND_ANALYTICS to role accountadmin;
+grant create schema on database NORTHWIND_ANALYTICS to role accountadmin; 
+grant usage on schema NORTHWIND_ANALYTICS.dbt to role accountadmin;
+grant create table on schema NORTHWIND_ANALYTICS.dbt to role accountadmin;
+grant create view on schema NORTHWIND_ANALYTICS.dbt to role accountadmin;
+grant usage on future schemas in database NORTHWIND_ANALYTICS to role accountadmin;
+grant monitor on future schemas in database NORTHWIND_ANALYTICS to role accountadmin;
+grant select on future tables in database NORTHWIND_ANALYTICS to role accountadmin;
+grant select on future views in database NORTHWIND_ANALYTICS to role accountadmin;
+grant usage on all schemas in database NORTHWIND_ANALYTICS to role accountadmin;
+grant monitor on all schemas in database NORTHWIND_ANALYTICS to role accountadmin;
+grant select on all tables in database NORTHWIND_ANALYTICS to role accountadmin;
+grant select on all views in database NORTHWIND_ANALYTICS to role accountadmin;
