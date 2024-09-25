@@ -6,7 +6,7 @@
 
 ## 1. Create EC2 instance on AWS <a name="ec2instance"></a>
 
-Create Ubuntu t3.medium EC2 instance
+Create Ubuntu t3a.medium EC2 instance
 
 ![image](https://github.com/user-attachments/assets/906365ed-f9d0-4334-a278-b4c6fe8027a8)
 
