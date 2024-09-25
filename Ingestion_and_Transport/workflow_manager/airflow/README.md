@@ -2,11 +2,9 @@
 
 # Airflow Environment
 1. [EC2 instance on AWS](#ec2instance)
-2. [Some paragraph](#paragraph1)
-    1. [Sub paragraph](#subparagraph1)
-3. [Another paragraph](#paragraph2)
+2. [Install Airflow](#install_airflow)
 
-## Create EC2 instance on AWS <a name="ec2instance"></a>
+## 1. Create EC2 instance on AWS <a name="ec2instance"></a>
 
 Create Ubuntu t3.medium EC2 instance
 
@@ -54,3 +52,5 @@ Update packages in Terminal
 ```
 sudo apt update
 ```
+
+## 2. Install Airflow <a name="install_airflow"></a>
