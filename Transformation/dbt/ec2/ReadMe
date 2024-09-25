@@ -1,1 +1,7 @@
 
+# Install Snowflake addapter
+```
+python -m pip install dbt-snowflake
+```
+
+
