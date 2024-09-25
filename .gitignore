@@ -4,3 +4,4 @@ target/
 dbt_packages/
 logs/
 Ingestion_and_Transport/Workflow Manager/Airflow/airflow-server-key-pair.pem
+ingestion_and_transport/workflow_manager/airflow/airflow-server-key-pair.pem
