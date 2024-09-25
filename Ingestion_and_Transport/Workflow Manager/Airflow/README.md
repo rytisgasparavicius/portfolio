@@ -10,11 +10,20 @@
 
 Create Ubuntu t3.medium EC2 instance
 
-![image](https://github.com/user-attachments/assets/2eb8b5d9-f0f1-455a-95c0-6f63ce10af8e)
+![image](https://github.com/user-attachments/assets/906365ed-f9d0-4334-a278-b4c6fe8027a8)
 
 Create Key Pair and download as ".pem" extension.
 
 ![image](https://github.com/user-attachments/assets/8d05eabe-0122-440d-8443-5da5d25484b6)
+
+Create Inbound entry in Security Group for ports 22 and 8080 for "My IP"
+
+![image](https://github.com/user-attachments/assets/b7c864d4-dc61-42b7-a1bb-442bb3adeae7)
+
+Select EC2 instance and press "Connect". 
+In "SSH client" copy the example of SSH command:
+
+![image](https://github.com/user-attachments/assets/8cfd9ccd-dadd-4d7f-b5b9-f98c488b5076)
 
 Use Remote SSH Visual Code extension 
 
