@@ -54,3 +54,34 @@ sudo apt update
 ```
 
 ## 2. Install Airflow <a name="install_airflow"></a>
+
+Install Python 3 pip Package Manager
+```
+sudo apt install python3-pip
+```
+
+Install Python 3 Virtual Environment Package
+```
+sudo apt install python3-venv
+```
+
+Create Virtual Environment for Airflow
+```
+python3 -m venv airflow_venv
+```
+
+Activate the Virtual Environment
+```
+source airflow_venv/bin/activate
+```
+
+Install Required Python Packages for Airflow
+```
+pip install pandas s3fs apache-airflow
+```
+
+Start Airflow Web Server in Standalone Mode
+```
+airflow webserver --port 8080
+
+```
