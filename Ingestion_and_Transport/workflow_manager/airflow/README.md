@@ -80,6 +80,19 @@ Install Required Python Packages for Airflow
 pip install pandas s3fs apache-airflow
 ```
 
+Run Airflwo DB init
+
+```
+airflow db init 
+```
+
+
+Create Admin user
+```
+airflow users  create --role Admin --username admin --email admin --firstname admin --lastname admin --password xxxxxxxxxx
+
+```
+
 Start Airflow Web Server in Standalone Mode
 ```
 airflow webserver --port 8080
