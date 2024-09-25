@@ -1,5 +1,5 @@
 ## Table of Contents  
-
+[TOC]
 ## Header 1
 a
 
