@@ -1,17 +1,27 @@
-Here's a useful method which should produce clickable references in any Markdown editor:
 
-At the end of each header, add an empty anchor with a chosen name — e.g. <a name="foo"></a>.
-At the start of the document, list the headers with a link to their anchors — e.g. [Foo](#foo).
-So this:
 
-# Table of contents
-1. [Introduction](#introduction)
+# Airflow Environment
+1. [EC2 instance on AWS](#ec2instance)
 2. [Some paragraph](#paragraph1)
     1. [Sub paragraph](#subparagraph1)
 3. [Another paragraph](#paragraph2)
 
-## This is the introduction <a name="introduction"></a>
-Some introduction text, formatted in heading 2 style
+## Create EC2 instance on AWS <a name="ec2instance"></a>
+
+Create Ubuntu t3.medium EC2 instance
+
+![image](https://github.com/user-attachments/assets/2eb8b5d9-f0f1-455a-95c0-6f63ce10af8e)
+
+Create Key Pair and download as ".pem" extension.
+
+![image](https://github.com/user-attachments/assets/8d05eabe-0122-440d-8443-5da5d25484b6)
+
+Use Remote SSH Visual Code extension 
+
+![image](https://github.com/user-attachments/assets/e526713d-4aed-4ca4-adfd-b680c25788d5)
+
+Press F1 and choose "Add New SSH Host"
+
 
 ## Some paragraph <a name="paragraph1"></a>
 The first paragraph text
