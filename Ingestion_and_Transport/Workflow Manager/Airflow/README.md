@@ -40,6 +40,11 @@ Choose config file
 
 ![image](https://github.com/user-attachments/assets/e75596fc-50a2-4eac-8def-4a7c47c666d3)
 
+Permissions for private key file
+![image](https://github.com/user-attachments/assets/0db15f44-cda4-4d54-8f7d-438cad55ab6b)
+
+
+
 F1 and enter "Connect to Host"
 ![image](https://github.com/user-attachments/assets/0dc43ba0-a4ac-4026-95df-e1fa6bfb381c)
 
