@@ -18,7 +18,8 @@ Create Key Pair and download as ".pem" extension.
 
 Create Inbound entry in Security Group for ports 22 and 8080 for "My IP"
 
-![image](https://github.com/user-attachments/assets/b7c864d4-dc61-42b7-a1bb-442bb3adeae7)
+![image](https://github.com/user-attachments/assets/62499d2f-9337-4226-bae2-661826556388)
+
 
 Select EC2 instance and press "Connect". 
 In "SSH client" copy the example of SSH command:
@@ -46,5 +47,10 @@ Permissions for private key file
 
 
 F1 and enter "Connect to Host"
+
 ![image](https://github.com/user-attachments/assets/0dc43ba0-a4ac-4026-95df-e1fa6bfb381c)
 
+Update packages in Terminal
+```
+sudo apt update
+```
