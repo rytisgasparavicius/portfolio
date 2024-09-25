@@ -98,3 +98,11 @@ Start Airflow Web Server in Standalone Mode
 airflow webserver --port 8080
 
 ```
+
+Airflow started
+![image](https://github.com/user-attachments/assets/a1f5b4df-2c4d-40ea-8a14-0952ad997413)
+
+
+![image](https://github.com/user-attachments/assets/236be9f0-6a91-4763-9576-4869d2020cb2)
+
+
