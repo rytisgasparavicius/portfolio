@@ -19,3 +19,7 @@ Initialize project
 ```
 dbt init
 ```
+
+Enter Project details (project name, adaptar, database connection, etc..)
+
+![image](https://github.com/user-attachments/assets/689923b7-1a5a-4258-a3ce-2b0c049798cb)
