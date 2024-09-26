@@ -4,8 +4,7 @@ source airflow_venv/bin/activate
 ```
 
 
-
-# Install Snowflake addapter
+Install Snowflake addapter
 ```
 python -m pip install dbt-snowflake
 ```
