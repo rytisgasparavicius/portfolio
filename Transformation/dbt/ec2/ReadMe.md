@@ -9,13 +9,9 @@ Install Snowflake addapter
 python -m pip install dbt-snowflake
 ```
 
-Create directory
+Create and enter directory
 ```
 mkdir dbt_proj
-```
-
-
-```
 cd dbt_proj
 ```
 
