@@ -28,3 +28,8 @@ Enter Project details (project name, adaptar, database connection, etc..)
 ### Enter project directory and run dbt debug
 
 ![image](https://github.com/user-attachments/assets/c3d4de61-26cf-4d6c-886c-9a54765f1e31)
+
+
+### Install DBT Power User extension
+
+![image](https://github.com/user-attachments/assets/ad1fef3d-b5d9-4d49-8fb6-0e8d009c82c0)
