@@ -39,3 +39,11 @@ Enter Project details (project name, adaptar, database connection, etc..)
 ![image](https://github.com/user-attachments/assets/d7ce05be-a221-4b9d-800a-6bbc3895ced6)
 ![image](https://github.com/user-attachments/assets/16027e33-e11e-4ccf-b554-77ee0bf5b8ad)
 
+### Activate environment. Go to Project directory. DBT Run
+
+![image](https://github.com/user-attachments/assets/c2b03907-76e9-40ef-9ee6-9eb084065c6c)
+
+![image](https://github.com/user-attachments/assets/1720f75f-b9ee-4b12-baa1-77145a0b1542)
+
+
+
