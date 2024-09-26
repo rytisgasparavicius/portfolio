@@ -33,3 +33,9 @@ Enter Project details (project name, adaptar, database connection, etc..)
 ### Install DBT Power User extension
 
 ![image](https://github.com/user-attachments/assets/ad1fef3d-b5d9-4d49-8fb6-0e8d009c82c0)
+
+### DBT Power User  Setup
+
+![image](https://github.com/user-attachments/assets/d7ce05be-a221-4b9d-800a-6bbc3895ced6)
+![image](https://github.com/user-attachments/assets/16027e33-e11e-4ccf-b554-77ee0bf5b8ad)
+
