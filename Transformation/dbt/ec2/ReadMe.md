@@ -54,3 +54,9 @@ git remote add -f origin https://github.com/rytisgasparavicius/portfolio.git
 echo "Transformation/dbt/ec2/repo/*" > .git/info/sparse-checkout
 git checkout origin/main
 ```
+
+### Push changes
+```
+git pull origin main
+git push origin HEAD:main
+```
