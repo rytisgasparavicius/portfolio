@@ -45,6 +45,11 @@ Enter Project details (project name, adaptar, database connection, etc..)
 
 ![image](https://github.com/user-attachments/assets/1720f75f-b9ee-4b12-baa1-77145a0b1542)
 
+```
+cd ..
+source airflow_venv/bin/activate
+cd dbt_proj/northwind4/Transformation/dbt/ec2/repo
+```
 
 ### Setup Git repo
 ```
@@ -62,3 +67,5 @@ git add * --sparse -f
 git pull origin main
 git push origin HEAD:main
 ```
+### Setup source control
+![image](https://github.com/user-attachments/assets/98ce3a48-e8b0-46fa-855a-f4351dea13bc)
