@@ -1,0 +1,1 @@
+{"_invocation_id": "b82e3ad1-18c9-4842-8003-b9f8751f03d6", "linked": {"0": {"name": "model.northwind4.my_first_dbt_model", "type": "model", "succ": [1, 2]}, "1": {"name": "test.northwind4.unique_my_first_dbt_model_id.16e066b321", "type": "test"}, "2": {"name": "test.northwind4.not_null_my_first_dbt_model_id.5fb22c2710", "type": "test"}}}
