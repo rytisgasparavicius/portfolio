@@ -49,6 +49,7 @@ Enter Project details (project name, adaptar, database connection, etc..)
 cd ..
 source airflow_venv/bin/activate
 cd dbt_proj/northwind4/Transformation/dbt/ec2/repo
+```
 
 ### Setup Git repo
 ```
