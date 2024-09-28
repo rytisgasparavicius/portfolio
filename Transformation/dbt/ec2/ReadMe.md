@@ -58,5 +58,7 @@ git checkout origin/main
 ### Push changes
 ```
 git pull origin main
+git add * --sparse -f
+git pull origin main
 git push origin HEAD:main
 ```
