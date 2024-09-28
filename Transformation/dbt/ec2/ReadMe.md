@@ -46,4 +46,11 @@ Enter Project details (project name, adaptar, database connection, etc..)
 ![image](https://github.com/user-attachments/assets/1720f75f-b9ee-4b12-baa1-77145a0b1542)
 
 
-
+### Setup Git repo
+```
+git init
+git config core.sparseCheckout true
+git remote add -f origin https://github.com/rytisgasparavicius/portfolio.git
+echo "Transformation/dbt/ec2/repo/*" > .git/info/sparse-checkout
+git checkout origin/main
+```
