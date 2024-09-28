@@ -62,3 +62,5 @@ git add * --sparse -f
 git pull origin main
 git push origin HEAD:main
 ```
+### Setup source control
+![image](https://github.com/user-attachments/assets/98ce3a48-e8b0-46fa-855a-f4351dea13bc)
