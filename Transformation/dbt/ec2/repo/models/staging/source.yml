@@ -1,0 +1,7 @@
+version: 2
+
+sources:
+  - name: NORTHWIND_RAW
+    schema: STAGING_FIVETRAN_DBO
+    tables:
+      - name: CUSTOMERS

@@ -11,7 +11,7 @@ with
             , phone
             , companyname
             , contacttitle
-		from NORTHWIND_RAW.STAGING_FIVETRAN_DBO.customers
+		from {{source("NORTHWIND_RAW", "CUSTOMERS")}}
 )
 
 select *
