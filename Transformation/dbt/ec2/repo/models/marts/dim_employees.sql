@@ -1,9 +1,13 @@
 with 
-    staging as (
+/*
+ staging as (
         select *
         from {{ref('stg_employees')}}
     )
-    , transformed as (
+    ,
+*/
+
+    transformed as (
         select
             row_number() over (order by employee_id) as employee_sk 
             , employee_id
@@ -21,7 +25,8 @@ with
             , title
             , title_of_courtesy
             , notes
-        from staging
+        from {{ref('stg_employees')}}
+        --from staging
     )
 
     select *  from transformed
