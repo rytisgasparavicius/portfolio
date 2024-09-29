@@ -1,16 +1,16 @@
 with
     source_data as (
        select
-            country
+            customerid as customer_id
+            , country
             , city
             , fax
-            , postalcode
+            , postalcode as postal_code   
             , region
-            , customerid
-            , contactname
+            , contactname as contact_name
             , phone
-            , companyname
-            , contacttitle
+            , companyname as company_name
+            , contacttitle as contact_title
 		from {{source("NORTHWIND_RAW", "CUSTOMERS")}}
 )
 
