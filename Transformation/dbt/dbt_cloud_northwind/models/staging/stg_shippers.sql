@@ -1,3 +1,12 @@
-select
-   SHIPPERID,COMPANYNAME,PHONE
-from NORTHWIND_RAW.STAGING_FIVETRAN_DBO.SHIPPERS
+with
+    source_data as (
+        select
+            phone
+            ,companyname as  company_name
+            ,shipperid as shipper_id
+      
+        from {{source("NORTHWIND_RAW", "SHIPPERS")}}
+    )
+
+select *
+from source_data

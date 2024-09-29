@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: NORTHWIND_RAW
+    schema: STAGING_FIVETRAN_DBO
+    tables:
+      - name: CUSTOMERS
+      - name: ORDER_DETAILS
+      - name: ORDERS
+      - name: PRODUCTS
+      - name: SHIPPERS
+      - name: EMPLOYEES
+      - name: SUPPLIERS
