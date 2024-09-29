@@ -17,7 +17,6 @@ with
             , extension
             , birth_date
             , region
-            , photo_path
             , home_phone
             , title
             , title_of_courtesy

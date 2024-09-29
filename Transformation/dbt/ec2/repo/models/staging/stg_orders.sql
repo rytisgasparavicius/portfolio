@@ -12,6 +12,7 @@ with
            ,shippostalcode as  ship_postal_code
            ,shipcity as  ship_city
             , freight
+            , shipvia as shipper_id
             ,shipaddress as  ship_address
             ,requireddate as required_date
         from {{source("NORTHWIND_RAW", "ORDERS")}}

@@ -15,7 +15,6 @@ with
             , reorder_level
             , supplier_id
             , units_on_order
-            , is_discontinued
         from staging
 )
 
