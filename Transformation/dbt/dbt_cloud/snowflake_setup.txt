@@ -83,6 +83,13 @@ grant select on all tables in database NORTHWIND_RAW to role accountadmin;
 grant select on all views in database NORTHWIND_RAW to role accountadmin;
 
 
+grant MANAGE GRANTS on account to role DBT_TRANSFORMER;
+
+use role DBT_TRANSFORMER;
+
+grant select on future tables in schema NORTHWIND_RAW.dbt_stg to role DBT_TRANSFORMER;  //// ???????
+
+
 //**OLDDDDDDDDDDDDDDDDDDDDDDDDDD. Before using a single datagbase ******************* NORTHWIND_ANALYTICS*****************
 create database NORTHWIND_ANALYTICS;
 
