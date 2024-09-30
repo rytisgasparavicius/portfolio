@@ -10,7 +10,7 @@ create role dbt_reporter;
 grant all on warehouse FIVETRAN_WAREHOUSE to role dbt_reporter;
 //******************************
 create user dbt_cloud_user
-password = 'f2fjkkhds3_32lskce'
+password = 'xxxxxx'
 default_warehouse = FIVETRAN_WAREHOUSE
 default_role = dbt_transformer;
 
