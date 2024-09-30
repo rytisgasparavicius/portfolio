@@ -34,8 +34,4 @@ models:
       - name: units_on_order
         description: The minimum units on a purchase order.
 
-      - name: is_discontinued
-        description: If the product has been discontinued.
-        tests:
-          - accepted_values:
-                values: ['No','Yes']
+      
