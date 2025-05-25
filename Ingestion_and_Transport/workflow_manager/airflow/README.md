@@ -76,6 +76,9 @@ source airflow_venv/bin/activate
 ```
 
 Install Required Python Packages for Airflow
+
+**AIRFLOW V2:**
+
 ```
 pip install pandas s3fs apache-airflow
 ```
@@ -96,8 +99,18 @@ airflow users  create --role Admin --username admin --email admin --firstname ad
 Start Airflow Web Server in Standalone Mode
 ```
 airflow webserver --port 8080
+```
+
+**AIRFLOW V3:**
 
 ```
+pip install "apache-airflow[celery]==3.0.1" --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-3.0.1/constraints-3.9.txt"
+pip install pandas s3fs
+airflow api-server --port 8080
+
+```
+
+
 
 Airflow started
 ![image](https://github.com/user-attachments/assets/a1f5b4df-2c4d-40ea-8a14-0952ad997413)
