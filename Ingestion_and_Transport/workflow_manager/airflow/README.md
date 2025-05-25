@@ -106,6 +106,14 @@ airflow webserver --port 8080
 ```
 pip install "apache-airflow[celery]==3.0.1" --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-3.0.1/constraints-3.9.txt"
 pip install pandas s3fs
+pip install apache-airflow-providers-fab
+
+CREATE USER:
+ls
+cd airflow 
+nano airflow.cfg
+auth_manager = airflow.providers.fab.auth_manager.fab_auth_manager.FabAuthManager
+
 airflow api-server --port 8080
 
 ```
