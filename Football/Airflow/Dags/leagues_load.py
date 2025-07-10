@@ -9,7 +9,8 @@ import http.client
 
 from airflow.providers.standard.operators.python import PythonOperator
 from airflow.sdk import DAG
-from airflow.providers.snowflake.operators.snowflake import SnowflakeOperator
+#from airflow.providers.snowflake.operators.snowflake import SnowflakeOperator
+from airflow.providers.common.sql.operators.sql import SQLExecuteQueryOperator
 
 import json
 
@@ -45,7 +46,6 @@ with DAG(
 
 
     query1 = [
-        """select 1;""",
         """show tables in database football;""",
     ]
 
@@ -56,9 +56,9 @@ with DAG(
         task_id="leagues_load_task",
         python_callable=leagues_load,
     )
-    query1_exec = SnowflakeOperator(
+    query1_exec = SQLExecuteQueryOperator(
         task_id="snowfalke_task1",
         sql=query1,
-        snowflake_conn_id="snowflake_conn",
+        conn_id="football_conn_id",
     )
     leagues_load_task >> query1_exec
