@@ -5,10 +5,13 @@ from __future__ import annotations
 import json
 import textwrap
 import pendulum
+import http.client
 
 from airflow.providers.standard.operators.python import PythonOperator
 from airflow.sdk import DAG
+from airflow.providers.snowflake.operators.snowflake import SnowflakeOperator
 
+import json
 
 with DAG(
     "leagues_load",
@@ -25,8 +28,27 @@ with DAG(
   
    
     def leagues_load(**kwargs):
-        ti = kwargs["ti"]
-        print('loading.....')
+        conn = http.client.HTTPSConnection("api-football-v1.p.rapidapi.com")
+
+        headers = {
+            'x-rapidapi-key': "b89554509emshd928807b9e0c597p15a6aejsn333d7eb15640",
+            'x-rapidapi-host': "api-football-v1.p.rapidapi.com"
+        }
+
+        conn.request("GET", "/v3/leagues", headers=headers)
+
+        res = conn.getresponse()
+        data = res.read()
+        print(data.decode("utf-8"))
+
+
+
+
+    query1 = [
+        """select 1;""",
+        """show tables in database football;""",
+    ]
+
 
 
 
@@ -34,5 +56,9 @@ with DAG(
         task_id="leagues_load_task",
         python_callable=leagues_load,
     )
-    
-    leagues_load_task
+    query1_exec = SnowflakeOperator(
+        task_id="snowfalke_task1",
+        sql=query1,
+        snowflake_conn_id="snowflake_conn",
+    )
+    leagues_load_task >> query1_exec
