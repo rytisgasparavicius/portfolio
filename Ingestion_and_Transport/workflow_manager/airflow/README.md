@@ -104,16 +104,26 @@ airflow webserver --port 8080
 **AIRFLOW V3:**
 
 ```
+1.
 pip install "apache-airflow[celery]==3.0.1" --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-3.0.1/constraints-3.9.txt"
 pip install pandas s3fs
 pip install apache-airflow-providers-fab
+airflow db reset
 
-CREATE USER:
+2. CREATE USER:  ( need to be in airflow dir (cd airflow)) 
+airflow users  create --role Admin --username admin2 --email admin2 --firstname admin2 --lastname admin2 --password psfjapsfasfasfasfpsdfwejpv2323p2f23fj32pf2o3f
+
+
+3.
 ls
 cd airflow 
 nano airflow.cfg
 auth_manager = airflow.providers.fab.auth_manager.fab_auth_manager.FabAuthManager
+AIRFLOW__API__WORKERS=1  , worker = 1  (otherwise 4 api workers will be started)
 
+4. on 3 different terminals:
+airflow scheduler
+airflow dag-processor
 airflow api-server --port 8080
 
 ```
