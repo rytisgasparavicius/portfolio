@@ -136,4 +136,5 @@ Airflow started
 
 ![image](https://github.com/user-attachments/assets/236be9f0-6a91-4763-9576-4869d2020cb2)
 
-
+**AIRFLOW Snowflake conn_id**
+<img width="902" height="765" alt="image" src="https://github.com/user-attachments/assets/2bdeb676-9ead-4abb-ad91-6bbb116ab446" />
