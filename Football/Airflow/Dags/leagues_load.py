@@ -40,6 +40,11 @@ with DAG(
 
         res = conn.getresponse()
         data = res.read()
+        data_json = json.loads(data.decode("utf-8"))
+        for league in data_json['response']:
+           print(league)
+       
+            
         print(data.decode("utf-8"))
 
 
