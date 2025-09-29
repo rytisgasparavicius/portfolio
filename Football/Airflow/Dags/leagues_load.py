@@ -11,6 +11,7 @@ from airflow.providers.standard.operators.python import PythonOperator
 from airflow.sdk import DAG
 #from airflow.providers.snowflake.operators.snowflake import SnowflakeOperator
 from airflow.providers.common.sql.operators.sql import SQLExecuteQueryOperator
+import snowflake.connector
 
 import json
 
@@ -47,16 +48,23 @@ with DAG(
             
         print(data.decode("utf-8"))
 
+        conn = snowflake.connector.connect(
+            user="softaurus",
+            password="PLf9Gfp692gd_1d",
+            account="spuhhnx-ulb05714",
+            warehouse="FOOTBALL_WAREHOUSE",
+            database="football",
+            schema=""
+            )
+        conn.cursor.execute("SELECT * FROM stg.leagues")
+    
+
 
 
 
     query1 = [
         """show tables in database football;""",
     ]
-
-
-
-
     leagues_load_task = PythonOperator(
         task_id="leagues_load_task",
         python_callable=leagues_load,
